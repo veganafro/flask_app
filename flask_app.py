@@ -34,10 +34,7 @@ db.close()
 
 @app.route('/')
 def home():
-    try:
-        return render_template('index.html')
-    except:
-        return redirect('/error')
+    return render_template('index.html')
 
 @app.route('/contact', methods = ['POST', 'GET'])
 def contact():
