@@ -7,7 +7,7 @@
         <meta name = 'description' content = "Jeremy Muhia's Website">
         <meta name = 'keywords' content = 'Jeremy, Muhia'>
         <meta name = 'author' content = 'Jeremy Muhia'>
-        <title>Vegan With the Afro - {% block title %} {% endblock %}</title>
+        <title>Vegan with the Afro - {% block title %} {% endblock %}</title>
     {% endblock %}
 
     <link rel = 'shortcut icon' type = 'image/x-icon' href = '/Site Logos/Vegan Afro Icon.ico'/>
@@ -16,6 +16,12 @@
     <script src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
 </head>
 <body>
+    {% block navigation %}
+        <div class="container-fluid" id="navigation">
+
+        </div>
+    {% endblock %}
+
     {% block about %}
         <div class="container-fluid" id="about">
 
