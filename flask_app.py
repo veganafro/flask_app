@@ -34,26 +34,42 @@ db.close()
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    try:
+        return render_template('index.html')
+    except:
+        return redirect('/error')
 
 @app.route('/contact', methods = ['POST', 'GET'])
 def contact():
-    if request.method == 'POST':
-        name = request.form['name']
-        email_address = request.form['email_address']
-        message = request.form['message']
-        #do something using smtplib to send an email
-        return redirect('/contact')
-    elif request.method == 'GET':
-        render_template('contact.hmtl')
+    try:
+        if request.method == 'POST':
+            name = request.form['name']
+            email_address = request.form['email_address']
+            message = request.form['message']
+            #do something using smtplib to send an email
+            return redirect('/contact')
+        elif request.method == 'GET':
+            render_template('contact.hmtl')
+    except:
+        return redirect('/error')
 
 @app.route('/social')
 def social():
-    render_template('social.html')
+    try:
+        render_template('social.html')
+    except:
+        return redirect('/error')
 
 @app.route('/about')
 def about():
-    render_template('about.html')
+    try:
+        render_template('about.html')
+    except:
+        return redirect('/error')
+
+@app.route('/error')
+def error():
+    render_template('error.html')
 
 
 if __name__ == '__main__':
