@@ -18,13 +18,15 @@ conn = psycopg2.connect(
 
 db = conn.cursor()
 
-#db.execute("SOME PgSQL COMMANDS", some_variables)
+"""
+db.execute("SOME PgSQL COMMANDS", some_variables)
 
 data = db.fetchall()
 
 db.commit()
 
 db.close()
+"""
 
 @app.route('/')
 def home():
