@@ -4,7 +4,7 @@ import urlparse
 import psycopg2
 
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates")
 
 def connection():
     urlparse.uses_netloc.append("postgres")
