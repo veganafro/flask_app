@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request, redirect
 import os
-import psycopg2
 import urlparse
+import psycopg2
+
+app = Flask(__name__)
 
 urlparse.uses_netloc.append("postgres")
 url = urlparse.urlparse(os.environ["postgres://cqjvgnkkjlqgri:K5tMTNqXIPgP1N1-OgZeacAi8K@ec2-54-243-45-168.compute-1.amazonaws.com:5432/dfubavudjcgt9d"])
@@ -16,7 +18,13 @@ conn = psycopg2.connect(
 
 db = conn.cursor()
 
-app = Flask(__name__)
+#db.execute("SOME PgSQL COMMANDS", some_variables)
+
+data = db.fetchall()
+
+db.commit()
+
+db.close()
 
 @app.route('/')
 def home():
