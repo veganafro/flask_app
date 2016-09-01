@@ -7,7 +7,7 @@ import psycopg2
 app = Flask(__name__, template_folder="templates")
 
 urlparse.uses_netloc.append("postgres")
-url = urlparse.urlparse(os.environ["MAIN_DB_URL"])
+url = urlparse.urlparse(os.environ["DATABASE_URL"])
 
 conn = psycopg2.connect(
     database=url.path[1:],
