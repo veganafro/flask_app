@@ -6,21 +6,22 @@ import psycopg2
 
 app = Flask(__name__, template_folder="templates")
 
-def connection():
-    urlparse.uses_netloc.append("postgres")
-    url = urlparse.urlparse(os.environ["postgres://cqjvgnkkjlqgri:K5tMTNqXIPgP1N1-OgZeacAi8K@ec2-54-243-45-168.compute-1.amazonaws.com:5432/dfubavudjcgt9d"])
+#def connection():
 
-    conn = psycopg2.connect(
-        database=url.path[1:],
-        user=url.username,
-        password=url.password,
-        host=url.hostname,
-        port=url.port
-    )
+urlparse.uses_netloc.append("postgres")
+url = urlparse.urlparse(os.environ["DATABASE_URL"])
 
-    db = conn.cursor()
+conn = psycopg2.connect(
+    database=url.path[1:],
+    user=url.username,
+    password=url.password,
+    host=url.hostname,
+    port=url.port
+)
 
-    return db
+db = conn.cursor()
+
+    #return db
 
 """
 db.execute("SOME PgSQL COMMANDS", some_variables)
