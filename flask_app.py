@@ -6,10 +6,8 @@ import psycopg2
 
 app = Flask(__name__, template_folder="templates")
 
-#def connection():
-
 urlparse.uses_netloc.append("postgres")
-url = urlparse.urlparse(os.environ["DATABASE_URL"])
+url = urlparse.urlparse(os.environ["MAIN_DB_URL"])
 
 conn = psycopg2.connect(
     database=url.path[1:],
@@ -20,18 +18,6 @@ conn = psycopg2.connect(
 )
 
 db = conn.cursor()
-
-    #return db
-
-"""
-db.execute("SOME PgSQL COMMANDS", some_variables)
-
-data = db.fetchall()
-
-db.commit()
-
-db.close()
-"""
 
 @app.route('/')
 def home():
