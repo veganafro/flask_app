@@ -10,15 +10,15 @@
         <title>Vegan with the Afro - {% block title %} {% endblock %}</title>
     {% endblock %}
 
-    <link rel = 'shortcut icon' type = 'image/x-icon' href = '/Site Logos/Vegan Afro Icon.ico'/>
-    <link type = 'text/css' rel = 'stylesheet' href = 'stylesheet.css'/>
-    <link rel = 'stylesheet' href = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'/>
+    <link type = 'text/css' rel = 'stylesheet' href = '../static/stylesheet.css'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
 </head>
 <body>
     {% block navigation %}
-        <div class="container-fluid" id="navigation">
-            <div class="container-fluid" id="charcoal-bar"></div>
+        <div class="container-fluid row" id="navigation">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="charcoal-bar"></div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="palegold-bar"></div>
         </div>
     {% endblock %}
 

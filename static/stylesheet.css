@@ -1,4 +1,18 @@
 body {
-    font-family: Helvetica;
-    background-color: #F4F4F4;
+    font-family: Helvetica !important;
+    background-color: #F4F4F4 !important;
+}
+
+#navigation {
+    padding: 0px !important;
+}
+
+#charcoal-bar {
+    background-color: #373737;
+    height: 18px;
+}
+
+#palegold-bar {
+    background-color: #C0B283;
+    height: 18px;
 }
