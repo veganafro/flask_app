@@ -1,9 +1,10 @@
 body {
     font-family: Helvetica !important;
     background-color: #F4F4F4 !important;
+    height: 100% !important;
 }
 
-#navigation {
+#navigation-header {
     padding: 0px !important;
 }
 
@@ -15,4 +16,10 @@ body {
 #palegold-bar {
     background-color: #C0B283;
     height: 18px;
+}
+
+#navigation-bar {
+    padding: 0px !important;
+    margin: auto !important;
+    border: 0px !important;
 }

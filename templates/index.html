@@ -16,10 +16,12 @@
 </head>
 <body>
     {% block navigation %}
-        <div class="container-fluid row" id="navigation">
+        <div class="container-fluid" id="navigation-header">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="charcoal-bar"></div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="palegold-bar"></div>
         </div>
+        <nav class="container-fluid navbar navbar-default" id="navigation-bar">
+        </nav>
     {% endblock %}
 
     {% block about %}
