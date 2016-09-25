@@ -1,6 +1,5 @@
 body {
     font-family: Helvetica !important;
-    background-color: #F4F4F4 !important;
     height: 100% !important;
 }
 
@@ -14,7 +13,7 @@ body {
 }
 
 #palegold-bar {
-    background-color: #C0B283;
+    background-color: #DDD4BC;
     height: 18px;
 }
 
@@ -22,4 +21,19 @@ body {
     padding: 0px !important;
     margin: auto !important;
     border: 0px !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+.navbar-header {
+    display: inline-block !important;
+    float: none !important;
+}
+
+#navigation-bar-about {
+    float: left !important;
+}
+
+#navigation-bar-contact {
+    float: right !important;
 }
