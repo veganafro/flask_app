@@ -28,12 +28,17 @@ body {
 .navbar-header {
     display: inline-block !important;
     float: none !important;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-#navigation-bar-about {
-    float: left !important;
-}
 
-#navigation-bar-contact {
-    float: right !important;
+@media screen (min-width: 480px) {
+    #navigation-bar-about {
+        float: left !important;
+    }
+
+    #navigation-bar-contact {
+        float: right !important;
+    }
 }
