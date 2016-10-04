@@ -4,7 +4,7 @@ body {
 }
 
 .navbar, .jumbotron {
-    margin: auto !important;
+    background-color: #FFFFFF;
 }
 
 #navigation-header {
@@ -13,12 +13,12 @@ body {
 
 #charcoal-bar {
     background-color: #373737;
-    height: 18px;
+    height: 12px;
 }
 
 #palegold-bar {
     background-color: #DDD4BC;
-    height: 18px;
+    height: 12px;
 }
 
 .navbar-header {
