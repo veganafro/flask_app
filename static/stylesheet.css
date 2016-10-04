@@ -31,3 +31,8 @@ body {
         float: none !important;
     }
 }
+
+.bio-container {
+    text-align: center !important;
+    font-weight: bold !important;
+}
