@@ -35,29 +35,29 @@ def contact():
             email_address = request.form['email_address']
             message = request.form['message']
             #do something using smtplib to send an email
-            return redirect('/contact')
+            return redirect('/contact'), 200
         elif request.method == 'GET':
-            render_template('contact.hmtl')
+            return render_template('contact.hmtl'), 200
     except:
-        return redirect('/error')
+        return redirect('/error'), 404
 
 @app.route('/social')
 def social():
     try:
-        render_template('social.html')
+        return render_template('social.html'), 200
     except:
-        return redirect('/error')
+        return redirect('/error'), 404
 
 @app.route('/about')
 def about():
     try:
-        render_template('about.html')
+        return render_template('about.html'), 200
     except:
-        return redirect('/error')
+        return redirect('/error'), 404
 
 @app.route('/error')
 def error():
-    render_template('error.html')
+    return render_template('error.html'), 404
 
 
 if __name__ == '__main__':
