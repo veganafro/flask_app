@@ -39,5 +39,12 @@ nav.navbar, div.jumbotron {
 
 .bio-container {
     text-align: center !important;
+}
+
+.name {
     font-weight: bold !important;
+}
+
+.intro {
+    font-weight: lighter !important;
 }
