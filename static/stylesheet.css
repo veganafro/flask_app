@@ -3,8 +3,9 @@ body {
     height: 100% !important;
 }
 
-.navbar, .jumbotron {
-    background-color: #FFFFFF;
+nav.navbar, div.jumbotron {
+    background-color: #FFFFFF !important;
+    margin: 0 !important;
 }
 
 #navigation-header {
