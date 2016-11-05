@@ -33,6 +33,7 @@ nav.navbar, div.jumbotron {
         text-align: center !important;
     }
     .navbar-header {
+        padding-top: 15px !important;
         float: none !important;
     }
 }
@@ -46,5 +47,6 @@ nav.navbar, div.jumbotron {
 }
 
 .intro {
+    font-family: Courier New !important;
     font-weight: lighter !important;
 }
