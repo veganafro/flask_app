@@ -1,7 +1,9 @@
 {% extends "index.html" %}
 {% block title %} About {% endblock %}
-{% block head %}
-    {{ super() }}
-{% endblock %}
+<head>
+    {% block head %}
+        {{ super() }}
+    {% endblock %}
+</head>
 {% block navigation %}{% endblock %}
 {% block about %}{% endblock %}
