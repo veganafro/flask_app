@@ -29,7 +29,7 @@ nav.navbar, div.jumbotron {
 
 .navbar-text {
     font-weight: bold !important;
-    color: #232323 !important;
+    color: #373737 !important;
 }
 
 @media only screen and (max-width: 480px) {
@@ -49,6 +49,7 @@ nav.navbar, div.jumbotron {
 
 .name {
     font-weight: bold !important;
+    color: #373737 !important;
 }
 
 .intro {
