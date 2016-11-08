@@ -50,10 +50,11 @@ nav.navbar, div.jumbotron {
 .name {
     font-weight: bold !important;
     color: #373737 !important;
+    font-size: 48px !important;
 }
 
 .intro {
     font-family: Courier New !important;
     font-weight: lighter !important;
-    font-size: 12px !important;
+    font-size: 16px !important;
 }
