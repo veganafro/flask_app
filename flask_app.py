@@ -6,7 +6,6 @@ import os
 import urlparse
 import psycopg2
 
-
 app = Flask(__name__, template_folder="templates", static_folder="static")
 
 def connection():
