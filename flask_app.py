@@ -37,7 +37,7 @@ def contact():
             name = request.form['name']
             email_address = request.form['email_address']
             message = request.form['message']
-            #do something using smtplib to send an email
+            # do something using maybe a self built api to send an email
             return redirect('/contact'), 200
         elif request.method == 'GET':
             return render_template('contact.hmtl'), 200
