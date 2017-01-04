@@ -28,7 +28,7 @@ nav.navbar, div.jumbotron {
 }
 
 .navbar-text {
-    font-weight: bold !important;
+    font-weight: lighter !important;
     color: #373737 !important;
 }
 
