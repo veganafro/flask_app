@@ -33,20 +33,27 @@
         </nav>
     {% endblock %}
 
+    {% for breaks in range(10) %}
+        <br>
+    {% endfor %}
+
     {% block about %}
         <div class="jumbotron" id="about">
             <div class="container-fluid bio-container">
                 <div class="bio-container name">
                     <h1 class="bio-container">Jeremy Muhia</h1>
                 </div>
-                <br>
-                <br>
+                {% for breaks in range(5) %}
+                    <br>
+                {% endfor %}
                 <div class="bio-container intro">
                     <p class="bio-container">
                         Hello World!
-                        <br>
-                        <br>
-                        I'm Jeremy and I'm a junior studying Computer Science at New York University. Thank you for visiting.
+                        {% for breaks in range(5) %}
+                            <br>
+                        {% endfor %}
+                        Roll Tide Roll // No animal products // Kenyan diaspora
+                        <!--I'm Jeremy and I'm a junior studying Computer Science at New York University. Thank you for visiting.
                         <br>
                         I was born and raised between Kenya and Alabama so obviously I'm a huge fan of college football
                         <br>
@@ -54,7 +61,7 @@
                         <br>
                         semester (fall '16) I'm working as a part time intern at Lazard Asset Management. Find me around
                         <br>
-                        Washington Square Park advocating for veganism and a more inclusive and intersectionally diverse tech industry.
+                        Washington Square Park advocating for veganism and a more inclusive and intersectionally diverse tech industry.-->
                     </p>
                 </div>
             </div>
