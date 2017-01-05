@@ -15,8 +15,16 @@ social_data = [
         'url': 'https://linkedin.com/in/jeremymuhia',
         'img_location': 'social_icons/linkedin.svg'
     },
-    {},
-    {},
+    {
+        'social_site': 'Github',
+        'url': 'https://github.com/veganafro',
+        'img_location': 'social_icons/github.svg'
+    },
+    {
+        'social_site': 'Facebook',
+        'url': 'https://facebook.com/jeremy.gathoni',
+        'img_location': 'social_icons/facebook.svg'
+    },
     {},
     {},
     {}
