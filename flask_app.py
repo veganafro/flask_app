@@ -59,7 +59,7 @@ def connection():
 @app.route('/')
 def home():
     try:
-        return render_template('index.html')
+        return render_template('index.html', social_data=social_data)
     except:
         return redirect('/error')
 
