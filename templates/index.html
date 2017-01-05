@@ -68,7 +68,8 @@
 
             {% for dictionary in social_data %}
                 <div class="container">
-                    <a href="{{ dictionary["url"] }}" class="social_link" target="_blank">
+                    <a href="{{ dictionary["url"] }}" class="social-link" target="_blank">
+                        <img src="../{{ dictionary["img_location"] }}" alt="dictionary["social_site"]" class="social-img"/>
                         <h3>{{ dictionary["social_site"] }}</h3>
                     </a>
                 </div>
