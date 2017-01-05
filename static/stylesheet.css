@@ -13,13 +13,13 @@ nav.navbar, div.jumbotron {
 }
 
 #charcoal-bar {
-    background-color: #373737;
-    height: 10px;
+    background-color: #424242;
+    height: 8px;
 }
 
 #palegold-bar {
-    background-color: #BA9077;
-    height: 10px;
+    background-color: #FF5252;
+    height: 8px;
 }
 
 .navbar-header {
