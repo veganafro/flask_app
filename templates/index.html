@@ -64,10 +64,10 @@
     {% endfor %}
 
     {% block social %}
-        <div class="container-fluid" id="social">
+        <div class="container-fluid social-section">
 
             {% for dictionary in social_data %}
-                <div class="container">
+                <div class="container social-logos">
                     <a href="{{ dictionary["url"] }}" class="social-link" target="_blank">
                         <img src="/static/social_icons/{{ dictionary["img_location"] }}" alt="dictionary["social_site"]" class="social-img"/>
                         <h3>{{ dictionary["social_site"] }}</h3>

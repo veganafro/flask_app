@@ -58,3 +58,21 @@ p.bio-container {
     font-weight: lighter !important;
     font-size: 16px !important;
 }
+
+.social-section {
+    text-align: center !important;
+    margin: 0px auto !important;
+    width: 100% !important;
+}
+
+.social-logos {
+    width: 250px !important;
+    height: 250px !important;
+    display: inline-block !important;
+    padding: 20px !important;
+}
+
+.social-img {
+    width: 50% !important;
+    height: 50% !important;
+}
