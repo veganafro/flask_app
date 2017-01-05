@@ -9,7 +9,6 @@ import psycopg2
 app = Flask(__name__, template_folder="templates", static_folder="static")
 
 social_data = [
-
     {
         'social_site': 'LinkedIn',
         'url': 'https://linkedin.com/in/jeremymuhia',
@@ -30,9 +29,16 @@ social_data = [
         'url': 'https://instagram.com/tellmeimpretty96/',
         'img_location': 'social_icons/instagram.svg'
     },
-    {},
-    {}
-
+    {
+        'social_site': 'Pinterest',
+        'url': 'https://pinterest.com/JeremyMuhia/',
+        'img_location': 'social_icons/pinterest.svg'
+    },
+    {
+        'social_site': 'SoundCloud',
+        'url': 'https://soundcloud.com/double7oh',
+        'img_location': 'social_icons/soundcloud.svg'
+    }
 ]
 
 def connection():
