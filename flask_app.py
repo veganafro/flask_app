@@ -80,7 +80,7 @@ def contact():
 @app.route('/social')
 def social():
     try:
-        return render_template('social.html'), 200
+        return render_template('social.html', social_data=social_data), 200
     except:
         return redirect('/error'), 404
 
