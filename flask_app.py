@@ -10,7 +10,11 @@ app = Flask(__name__, template_folder="templates", static_folder="static")
 
 social_data = [
 
-    {},
+    {
+        'social_site': 'LinkedIn',
+        'url': 'https://linkedin.com/in/jeremymuhia',
+        'img_location': 'social_icons/linkedin.svg'
+    },
     {},
     {},
     {},
