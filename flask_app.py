@@ -25,7 +25,11 @@ social_data = [
         'url': 'https://facebook.com/jeremy.gathoni',
         'img_location': 'social_icons/facebook.svg'
     },
-    {},
+    {
+        'social_site': 'Instagram',
+        'url': 'https://instagram.com/tellmeimpretty96/',
+        'img_location': 'social_icons/instagram.svg'
+    },
     {},
     {}
 
