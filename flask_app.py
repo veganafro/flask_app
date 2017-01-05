@@ -12,32 +12,32 @@ social_data = [
     {
         'social_site': 'LinkedIn',
         'url': 'https://linkedin.com/in/jeremymuhia',
-        'img_location': 'social_icons/linkedin.svg'
+        'img_location': 'linkedin.svg'
     },
     {
         'social_site': 'Github',
         'url': 'https://github.com/veganafro',
-        'img_location': 'social_icons/github.svg'
+        'img_location': 'github.svg'
     },
     {
         'social_site': 'Facebook',
         'url': 'https://facebook.com/jeremy.gathoni',
-        'img_location': 'social_icons/facebook.svg'
+        'img_location': 'facebook.svg'
     },
     {
         'social_site': 'Instagram',
         'url': 'https://instagram.com/tellmeimpretty96/',
-        'img_location': 'social_icons/instagram.svg'
+        'img_location': 'instagram.svg'
     },
     {
         'social_site': 'Pinterest',
         'url': 'https://pinterest.com/JeremyMuhia/',
-        'img_location': 'social_icons/pinterest.svg'
+        'img_location': 'pinterest.svg'
     },
     {
         'social_site': 'SoundCloud',
         'url': 'https://soundcloud.com/double7oh',
-        'img_location': 'social_icons/soundcloud.svg'
+        'img_location': 'soundcloud.svg'
     }
 ]
 
