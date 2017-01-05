@@ -56,7 +56,7 @@ def connection():
     db = conn.cursor()
     return db
 
-@app.route('/')
+@app.route('/', methods = ['GET'])
 def home():
     try:
         return render_template('index.html', social_data=social_data)
@@ -77,21 +77,21 @@ def contact():
     except:
         return redirect('/error'), 404
 
-@app.route('/social')
+@app.route('/social', methods = ['GET'])
 def social():
     try:
         return render_template('social.html', social_data=social_data), 200
     except:
         return redirect('/error'), 404
 
-@app.route('/about')
+@app.route('/about', methods = ['GET'])
 def about():
     try:
         return render_template('about.html'), 200
     except:
         return redirect('/error'), 404
 
-@app.route('/error')
+@app.route('/error', methods = ['GET'])
 def error():
     return render_template('error.html'), 404
 

@@ -22,7 +22,7 @@
         </div>
         <nav class="container-fluid navbar navbar-default" id="navigation-bar">
             <div class="navbar-header pull-left" id="navigation-bar-about">
-                <a class="navbar-text" href="/about">ABOUT</a>
+                <a class="navbar-text" href="{{ url_for('about') }}">ABOUT</a>
             </div>
             <div class="navbar-header pull-right" id="navigation-bar-social">
                 <a class="navbar-text" href="#">SOCIAL</a>
@@ -64,17 +64,25 @@
     {% endfor %}
 
     {% block social %}
-        <div class="container-fluid social-section">
-
-            {% for dictionary in social_data %}
+        <div class="container-fluid social-section top-row">
+            {% for item in range(0, 3) %}
                 <div class="container social-logos">
-                    <a href="{{ dictionary["url"] }}" class="social-link" target="_blank">
-                        <img src="/static/social_icons/{{ dictionary["img_location"] }}" alt="dictionary["social_site"]" class="social-img"/>
-                        <h3>{{ dictionary["social_site"] }}</h3>
+                    <a href="{{ social_data[item]["url"] }}" class="social-link" target="_blank">
+                        <img src="/static/social_icons/{{ social_data[item]["img_location"] }}" alt="social_data[item]["social_site"]" class="social-img"/>
+                        <h3>{{ social_data[item]["social_site"] }}</h3>
                     </a>
                 </div>
             {% endfor %}
-
+        </div>
+        <div class="container-fluid social-section bottom-row">
+            {% for item in range(3, 6) %}
+                <div class="container social-logos">
+                    <a href="{{ social_data[item]["url"] }}" class="social-link" target="_blank">
+                        <img src="/static/social_icons/{{ social_data[item]["img_location"] }}" alt="social_data[item]["social_site"]" class="social-img"/>
+                        <h3>{{ social_data[item]["social_site"] }}</h3>
+                    </a>
+                </div>
+            {% endfor %}
         </div>
     {% endblock %}
 
