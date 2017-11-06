@@ -61,7 +61,6 @@ p.bio-container {
 
 .social-section {
     text-align: center !important;
-    color: #373737 !important;
     margin: 0px auto !important;
     width: 100% !important;
 }
@@ -79,5 +78,6 @@ p.bio-container {
 }
 
 .social-link {
+    color: #373737 !important;
     text-decoration: none !important;
 }
