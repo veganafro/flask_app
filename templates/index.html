@@ -7,7 +7,7 @@
         <meta name = 'description' content = "Jeremy Muhia's Website">
         <meta name = 'keywords' content = 'Jeremy, Muhia'>
         <meta name = 'author' content = 'Jeremy Muhia'>
-        <title>vegan with the afro: {% block title %} home {% endblock %}</title>
+        <title>{% block title %} home {% endblock %}</title>
     {% endblock %}
     <link type = 'text/css' rel = 'stylesheet' href = '../static/stylesheet.css'/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -34,11 +34,9 @@
             </div>
         </div>
     {% endblock %}
-
     {% for breaks in range(10) %}
         <br>
     {% endfor %}
-
     {% block social %}
         <div class="container-fluid social-section top-row">
             {% for item in range(0, 3) %}
