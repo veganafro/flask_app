@@ -15,29 +15,14 @@ social_data = [
         'img_location': 'linkedin.svg'
     },
     {
+        'social_site': 'Quantopian',
+        'url': 'https://www.quantopian.com/users/586da5ab0c96877426000182',
+        'img_location': 'quantopian.png'
+    },
+    {
         'social_site': 'Github',
         'url': 'https://github.com/veganafro',
         'img_location': 'github.svg'
-    },
-    {
-        'social_site': 'Facebook',
-        'url': 'https://facebook.com/jeremy.gathoni',
-        'img_location': 'facebook.svg'
-    },
-    {
-        'social_site': 'Instagram',
-        'url': 'https://instagram.com/tellmeimpretty96/',
-        'img_location': 'instagram.svg'
-    },
-    {
-        'social_site': 'Pinterest',
-        'url': 'https://pinterest.com/JeremyMuhia/',
-        'img_location': 'pinterest.svg'
-    },
-    {
-        'social_site': 'SoundCloud',
-        'url': 'https://soundcloud.com/double7oh',
-        'img_location': 'soundcloud.svg'
     }
 ]
 
