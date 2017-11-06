@@ -15,7 +15,7 @@
     <script src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
 </head>
 <body>
-    {% block navigation %}
+    <!-- {% block navigation %}
         <div class="container-fluid" id="navigation-header">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="charcoal-bar"></div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="palegold-bar"></div>
@@ -31,7 +31,7 @@
                 <a class="navbar-text" href="#">CONTACT</a>
             </div>
         </nav>
-    {% endblock %}
+    {% endblock %} -->
 
     {% for breaks in range(10) %}
         <br>
@@ -41,18 +41,18 @@
         <div class="jumbotron" id="about">
             <div class="container-fluid bio-container">
                 <div class="bio-container name">
-                    <h1 class="bio-container">Jeremy Muhia</h1>
+                    <h1 class="bio-container">jeremy muhia</h1>
                 </div>
                 {% for breaks in range(5) %}
                     <br>
                 {% endfor %}
                 <div class="bio-container intro">
                     <p class="bio-container">
-                        Hello World!
+                        hello, world!
                         {% for breaks in range(5) %}
                             <br>
                         {% endfor %}
-                        roll tide roll // no animal products // kenyan diaspora
+                        i'm a Kenyan-American computer science student at nyu. i enjoy alabama football and being vegan.
                     </p>
                 </div>
             </div>
@@ -80,10 +80,10 @@
         <br>
     {% endfor %}
 
-    {% block contact %}
+    <!-- {% block contact %}
         <div class="container-fluid" id="contact">
 
         </div>
-    {% endblock %}
+    {% endblock %} -->
 </body>
 </html>
