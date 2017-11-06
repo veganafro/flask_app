@@ -46,7 +46,7 @@ def home():
     try:
         return render_template('index.html', social_data=social_data)
     except:
-        return redirect('/error')
+        return redirect('/error'), 200
 
 @app.route('/contact', methods = ['POST', 'GET'])
 def contact():
