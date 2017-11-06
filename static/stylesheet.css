@@ -8,41 +8,6 @@ nav.navbar, div.jumbotron {
     margin: 0 !important;
 }
 
-#navigation-header {
-    padding: 0px !important;
-}
-
-#charcoal-bar {
-    background-color: #424242;
-    height: 8px;
-}
-
-#palegold-bar {
-    background-color: #424242;
-    height: 8px;
-}
-
-.navbar-header {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.navbar-text {
-    font-weight: lighter !important;
-    color: #373737 !important;
-}
-
-@media only screen and (max-width: 480px) {
-    .navbar-default {
-        float: none !important;
-        text-align: center !important;
-    }
-    .navbar-header {
-        padding-top: 15px !important;
-        float: none !important;
-    }
-}
-
 .bio-container {
     text-align: center !important;
 }
